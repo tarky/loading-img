@@ -4,7 +4,7 @@ Plugin Name: Loading img
 Author: webfood
 Plugin URI: http://webfood.info/
 Description: Loading img
-Version: 0.1
+Version: 0.2
 Author URI: http://webfood.info/
 Text Domain: Loading img
 Domain Path: /languages
