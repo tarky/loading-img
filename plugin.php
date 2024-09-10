@@ -28,19 +28,20 @@ License:
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
-
+*/ 
 if(!(is_admin())) {
   function output_loading_img() {
     wp_register_style( 'loading_img', false );
     wp_enqueue_style( 'loading_img' , 0);
   	$theme_color = get_theme_mod( 'theme_color', '#a9a9a9');
   	$svg = file_get_contents(  plugin_dir_path( __FILE__ ).'loading.svg');
-  	$svg = base64_encode(str_replace("#a9a9a9", $theme_color, $svg));
+    $svg = preg_replace(['/^\s+/m','/\n|\r/m'], '',$svg);
+    $svg = str_replace("#a9a9a9", $theme_color, $svg);
+    $svg = str_replace("#", '%23', $svg);
 
     $css = "
       img, iframe {
-        background-image: url('data:image/svg+xml;base64,".$svg."') !important;
+        background-image: url('data:image/svg+xml;utf8,".$svg."') !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
         background-size:30% auto !important;
