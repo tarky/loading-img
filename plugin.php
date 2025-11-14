@@ -72,5 +72,5 @@ imgs.forEach(function(img) {
 </script>
 EOM;
 	}
-	add_action( 'shutdown', 'remove_loading_img' );
+	add_action( 'wp_print_footer_scripts', 'remove_loading_img' );
 }
