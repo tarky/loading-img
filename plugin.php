@@ -2,10 +2,10 @@
 /*
 Plugin Name: Loading img
 Author: webfood
-Plugin URI: http://webfood.info/
+Plugin URI: https://webfood.info/
 Description: Loading img
-Version: 0.2
-Author URI: http://webfood.info/
+Version: 0.3
+Author URI: https://webfood.info/
 Text Domain: Loading img
 Domain Path: /languages
 
@@ -13,7 +13,7 @@ License:
  Released under the GPL license
   http://www.gnu.org/copyleft/gpl.html
 
-  Copyright 2021 (email : webfood.info@gmail.com)
+  Copyright 2025 (email : webfood.info@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
